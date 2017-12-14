@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginb"
+    tools:context="encomplus.com.truckapp.DriverRegistation">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobno"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/em"
+        android:textSize="22sp"
+        android:textColor="#131213"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobno"
+        android:id="@+id/mobno2"
+        android:maxLength="13"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_dialer_sip_black_24dp"
+        android:layout_centerVertical="true"
+        android:textSize="22sp"
+        android:textColor="#131213"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verify"
+        android:text="Verify"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/mobno2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>
