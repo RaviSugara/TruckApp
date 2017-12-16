@@ -1,5 +1,6 @@
 package encomplus.com.truckapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -10,6 +11,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import encomplus.com.truckapp.Adapter.ViewPagerAdapter;
 
 public class Profile extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -80,19 +83,23 @@ public class Profile extends AppCompatActivity implements NavigationView.OnNavig
         int id = item.getItemId();
 
         if (id == R.id.nav_liveReport) {
-            viewPager.setCurrentItem(0);
+            Intent intent =new Intent(Profile.this,Main2Activity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_myorder) {
-            viewPager.setCurrentItem(1);
-        } else if (id == R.id.nav_payment) {
+                 }
+        else if (id == R.id.nav_payment) {
             viewPager.setCurrentItem(2);
         } else if (id == R.id.nav_repottruck) {
-            viewPager.setCurrentItem(3);
+            Intent intent =new Intent(Profile.this,ReportTruck.class);
+            startActivity(intent);
         } else if (id == R.id.nav_setting ) {
             viewPager.setCurrentItem(4);
         }else if (id == R.id.nav_contactus) {
             viewPager.setCurrentItem(5);
         }
         else if (id == R.id.nav_logout) {
+            Intent intent =new Intent(Profile.this,MainActivity.class);
+            startActivity(intent);
             finish();
         }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginb"
+    android:background="@drawable/bg3"
     tools:context="encomplus.com.truckapp.MainActivity">
 
     <FrameLayout
@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-android:background="#1572f9"
+
+
         android:weightSum="1">
         <Button
             android:layout_width="0dp"
@@ -30,7 +31,7 @@ android:background="#1572f9"
             android:layout_weight=".45"
             android:textSize="15sp"
             android:textColor="#000"
-            android:background="@drawable/dw2"
+            android:background="@drawable/dw"
             android:id="@+id/UserRegistation"
             android:onClick="UserRegistation"
             android:text="User Registation"
@@ -38,7 +39,7 @@ android:background="#1572f9"
         <Space
             android:layout_width="0dp"
             android:background="@drawable/dw2"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight=".1"/>
 
         <Button
@@ -49,7 +50,7 @@ android:background="#1572f9"
             android:id="@+id/DriverRegistation"
             android:text="Driver Registation"
             android:onClick="DriverRegistation"
-            android:background="@drawable/dw2"
+            android:background="@drawable/dw"
             android:padding="10dp"/>
     </LinearLayout>
 
